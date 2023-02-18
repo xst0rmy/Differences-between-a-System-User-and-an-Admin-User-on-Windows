@@ -1,0 +1,1 @@
+# Differences-between-a-System-User-and-an-Admin-User-on-Windows
