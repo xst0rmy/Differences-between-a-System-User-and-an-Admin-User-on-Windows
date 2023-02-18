@@ -79,12 +79,38 @@ psexec -sid cmd.exe
 
 ```
 
+![](https://github.com/xst0rmy/Differences-between-a-System-User-and-an-Admin-User-on-Windows/blob/main/Images/sid%207.png)
+
+The image below shows another command prompt tab opened after running the command above. 
+
+![](https://github.com/xst0rmy/Differences-between-a-System-User-and-an-Admin-User-on-Windows/blob/main/Images/sid%208.png)
+
+I typed regedit.exe to open up the registry editor application.
+
+![](https://github.com/xst0rmy/Differences-between-a-System-User-and-an-Admin-User-on-Windows/blob/main/Images/sid%209.png)
+
+The above command opened up the Registry Editor app and the arrow indicator in the image below shows the path I used to access the SAM hive
+
+![](https://github.com/xst0rmy/Differences-between-a-System-User-and-an-Admin-User-on-Windows/blob/main/Images/sid%2010.png)
+
+Notice any difference in the SAM drive as compared to when I opened it as an admin user?
+
+Yes, there are more information on here and that is because the admin user doesn't have the right to access these extra information or make changes to them.
+
+Now lets open up the file in the SAM folder to access the database file that saves up the passwords on the operating system which is the file with the "C" which I highlighted.
+
+![](https://github.com/xst0rmy/Differences-between-a-System-User-and-an-Admin-User-on-Windows/blob/main/Images/sid%2011.png)
+
+Yes! it is a binary file, the creators also had to put a level of security and not display it in a compiled language so that if a malicious user were to access it, they woulkdnt be able to instantly view the saved passwords.
+
+I hope you learnt something by reading the write-up above. There are other ways to access the system user, If you wish to read up on that, click the link below:
+
+```
+
+https://techdirectarchive.com/2022/07/25/how-to-run-a-program-in-windows-as-the-system-localsystem-account/
 
 
-
-
-
-
+```
 
 
 
